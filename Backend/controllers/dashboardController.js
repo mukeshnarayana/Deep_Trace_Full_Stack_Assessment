@@ -28,7 +28,7 @@ const getDashboardStats = async (req, res, next) => {
       // 1. Total active users in tenant
       User.countDocuments({ tenantId, isActive: true }),
 
-      // 2. Campaigns grouped by status using MongoDB aggregation
+      // 2. Campaigns grouped by status using database aggregation
       Campaign.aggregate([
         { $match: campaignMatch },
         { $group: { _id: '$status', count: { $sum: 1 } } }

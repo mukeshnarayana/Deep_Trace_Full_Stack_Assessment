@@ -8,7 +8,7 @@ const AuditLog = require('../models/AuditLog');
 
 const seedData = async () => {
   try {
-    console.log('[Seed] Connecting to MongoDB...');
+    console.log('[Seed] Connecting to PostgreSQL (Neon)...');
     await connectDB();
 
     console.log('[Seed] Wiping existing database collections...');

@@ -1,7 +1,7 @@
 {
   "name": "multi-tenant-security-platform",
   "version": "1.0.0",
-  "description": "Multi-Tenant Security Management Platform API built with Node.js, Express.js, MongoDB (Mongoose)",
+  "description": "Multi-Tenant Security Management Platform API built with Node.js, Express.js, PostgreSQL (Neon Cloud)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -13,7 +13,8 @@
     "multi-tenant",
     "security-management",
     "express",
-    "mongoose",
+    "postgresql",
+    "neon",
     "rbac",
     "jwt"
   ],
@@ -29,6 +30,7 @@
     "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^8.24.4",
+    "pg": "^8.23.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
     "zod": "^3.25.1"
